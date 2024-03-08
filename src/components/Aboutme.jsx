@@ -22,7 +22,7 @@ const Aboutme = () => {
 
     </Segment>
 
-    <Image size='big' src='./public/zorrofN.gif' />
+    <Image size='big' src='/zorrofN.gif' />
     </Container>
   );
 };

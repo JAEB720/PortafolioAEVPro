@@ -15,7 +15,7 @@ const Section = () => {
         <p className="fecha">2023-2024</p><br />
         <span>front end Developer</span><br />
           SunshineBodyshop 
-        <Image   centered size='mini' src='./public/logo.png' />
+        <Image   centered size='mini' src='/logo.png' />
         </Button>
 
       </div>
