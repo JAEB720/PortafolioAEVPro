@@ -7,17 +7,17 @@ const Aboutme = () => {
 
   return (
     <Container fluid > 
-        <Segment >
-        <div className="acerca">
+        <Segment style={{ background: 'black', border: "solid 3px" , color:"#ADCCEA" , borderRadius:"25px", overflow:"hidden", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)", marginTop:"3rem" }}  >
+        <Card centered fluid  className="acerca">
           <h2>Acerca de mi</h2>
-          <p>
+          <p >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum alias<br />
             delectus quaerat at quod sit. Iusto harum repellendus cupiditate. Id velit architecto <br />
             repellendus illo repudiandae dolor voluptates tenetur nemo aperiam quidem tempora <br />
             praesentium ipsa maiores illum, minima quia dolorem, laudantium,<br />
             libero eius? Excepturi culpa porro possimus voluptatem.
           </p>
-        </div>
+        </Card>
       
 
     </Segment>

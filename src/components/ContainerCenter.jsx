@@ -4,9 +4,10 @@ import Section from './Section';
 import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
+import Skills from './Skills';
 
 
-const AcercaDeMi = () => {
+const ContainerCenter = () => {
   const experienciaSectionRef = useRef(null);
   const [activeItem, setActiveItem] = useState(null);
   const [visibleSidebar, setVisibleSidebar] = useState(false);
@@ -25,16 +26,11 @@ const AcercaDeMi = () => {
     </div>
   );
 
-  const SidebarContentSkills = () => (
-    <div>
-      <Header as='h3'>Skills Sidebar</Header>
-      <p>Content for Skills Sidebar goes here.</p>
-    </div>
-  );
+ 
 
   const SidebarContentWorkExperience = () => (
     <div>
-      <Header as='h3'>Work Experience Sidebar</Header>
+      <Header as='h3'>Work Experience</Header>
      <Section/>
     </div>
   );
@@ -59,19 +55,20 @@ const AcercaDeMi = () => {
   );
 
   return (
-    <Container>
-    <Segment textAlign='center'>
+    <Container style={{ background: '#445355', border: "none"  , padding:"0.3rem", borderRadius:"5px", margin:"0.5rem" }}>
+    <Segment textAlign='center' style={{ background: '', border: "none" , color:"" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}}>
       <Header as='h2'>
-        <Menu inverted widths={4}>
+        <Menu inverted widths={3}style={{ background: 'black', border: "none" , color:"#ADCCEA" , padding:"0.3rem", borderRadius:"5px", margin:"0.5rem", fontSize:"0.5em"}} >
 
-          <Menu.Item onClick={() => handleMenuItemClick('about me', 'left')}>
-            <Image size='mini' circular src='./public/zorrocara.png' />
+          <Menu.Item  ce onClick={() => handleMenuItemClick('about me', 'left')}>
+            <Image size='mini' circular src='/zorrocara.png' />
             About me
 
           </Menu.Item>
-          <Menu.Item onClick={() => handleMenuItemClick('skills', 'top')}>
+
+          {/* <Menu.Item onClick={() => handleMenuItemClick('skills', 'top')}>
             Skills
-          </Menu.Item>
+          </Menu.Item> */}
 
           <Menu.Item onClick={() => handleMenuItemClick('work experience', 'right')}>
             Work Experience
@@ -88,9 +85,9 @@ const AcercaDeMi = () => {
 
         <div className="imagen0"></div>
         <div className="info1">
-          <Card centered>
-            {/* <Image src='./public/fotoae.jpg' wrapped ui={false} /> */}
-          </Card>
+          <Card centered style={{ background: 'black', border: "solid 3px" , color:"#ADCCEA" , borderRadius:"25px", overflow:"hidden", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }} >
+            <Image src='/ae.jpg' wrapped ui={false} style={{ overflow:"hidden"}}/>
+          </Card>  
 
           <h2>Hola, soy Alejandro</h2>
           <h1>Diseñador y<br />desarrollador Web</h1>
@@ -122,13 +119,13 @@ const AcercaDeMi = () => {
         direction={sidebarDirection} 
         visible={visibleSidebar}
         width='huge'
-        style={{ background: 'linear-gradient(rgba(229, 255, 0, 0.81), rgba(100, 100, 100, 0.91))', border: "solid", }}
+        style={{ background: '#000000', border: "solid", }}
       >
 
         <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width:"40rem" }}>
     {/* Contenido del Sidebar */}
     {activeItem === 'about me'  && <SidebarContentAboutMe  />}
-    {activeItem === 'skills' && <SidebarContentSkills />}
+    {/* {activeItem === 'skills' && <SidebarContentSkills />} */}
     {activeItem === 'work experience' && <SidebarContentWorkExperience />}
    
     {activeItem === 'contact' && <SidebarContentCoctact />}
@@ -138,4 +135,4 @@ const AcercaDeMi = () => {
   );
 };
 
-export default AcercaDeMi;
+export default ContainerCenter;
