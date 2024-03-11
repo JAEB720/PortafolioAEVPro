@@ -22,7 +22,7 @@ function Skills() {
             <Card>
               <Card.Content>
                 <Card.Description>
-                  <img src="/LogoReact.png" alt="Logo 1" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                  <img src="/skills/react.png" alt="Logo 1" style={{ maxWidth: '20%', maxHeight: '20%' }} />
                   {/* <Icon size='big' name='js'/> */}
                 </Card.Description>
               </Card.Content>
