@@ -30,7 +30,9 @@ const Portfolio = () => {
       <div>
         <Card>
           <Card.Content>
-            <Card.Header>Imagen 1</Card.Header>
+            <Card.Header>Imagen 1
+            <Image src="/portafolio/GalletaF.png" alt="Logo 3" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            </Card.Header>
             <Card.Meta>Descripción de la Imagen 1</Card.Meta>
           </Card.Content>
         </Card>
@@ -38,7 +40,9 @@ const Portfolio = () => {
       <div>
         <Card>
           <Card.Content>
-            <Card.Header>Imagen 2</Card.Header>
+            <Card.Header>Imagen 2
+            <Image src="/portafolio/ApiClima.png" alt="Logo 3" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            </Card.Header>
             <Card.Meta>Descripción de la Imagen 2</Card.Meta>
           </Card.Content>
         </Card>
@@ -46,7 +50,22 @@ const Portfolio = () => {
       <div>
         <Card>
           <Card.Content>
-            <Card.Header>Imagen 3</Card.Header>
+            <Card.Header>Imagen 3
+            <Image src="/portafolio/CrudUser.png" alt="Logo 3" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            </Card.Header>
+            <Card.Meta>Descripción de la Imagen 3</Card.Meta>
+          </Card.Content>
+        </Card>
+      </div>
+
+      <div>
+        <Card>
+          <Card.Content>
+            <Card.Header>Imagen 4
+            <Image src="/portafolio/PokedexC.png" alt="Logo 4" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            <Image src="/portafolio/PokedexP.png" alt="Logo 4" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            
+            </Card.Header>
             <Card.Meta>Descripción de la Imagen 3</Card.Meta>
           </Card.Content>
         </Card>
