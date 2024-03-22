@@ -15,8 +15,8 @@ import 'react-awesome-slider/dist/styles.css';
 
 const Portfolio = () => {
   return (
-    <Container   style={{ background: 'linear-gradient(rgba(229, 255, 0, 0.81), rgba(100, 100, 100, 0.91))', border: "solid",  }}>
-      <Segment style={{ background: 'linear-gradient(rgba(229, 255, 0, 0.81), rgba(100, 100, 100, 0.91))', border: "solid", padding:"rem"  }} >
+    <Container   style={{ background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))',  }}>
+      <Segment style={{ background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0.5rem"  }} >
       <AwesomeSlider
       className="vertical-slider"
       organicArrows={false}

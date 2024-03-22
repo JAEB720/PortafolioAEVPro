@@ -55,13 +55,15 @@ const ContainerCenter = () => {
   );
 
   return (
-    <Container style={{ background: '#445355', border: "none"  , padding:"0.3rem", borderRadius:"5px", margin:"0.5rem" }}>
-    <Segment textAlign='center' style={{ background: '', border: "none" , color:"" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}}>
-      <Header as='h2'>
-        <Menu inverted widths={3}style={{ background: 'black', border: "none" , color:"#ADCCEA" , padding:"0.3rem", borderRadius:"5px", margin:"0.5rem", fontSize:"0.5em"}} >
+    <Container  style={{ border: "none"  , padding:"0.2rem", borderRadius:"5px", margin:"0.5rem" }}>
+    <Segment textAlign='center' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none" , color:"" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}}>
+      <Header as='h2' >
 
-          <Menu.Item  ce onClick={() => handleMenuItemClick('about me', 'left')}>
-            <Image size='mini' circular src='/zorrocara.png' />
+        <Menu inverted widths={3}style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "" , color:"#ADCCEA" , padding:"0.3rem", borderRadius:"5px", margin:"0.5rem", fontSize:"0.5em"}} >
+
+
+          <Menu.Item  style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px" , color:"white" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}} ce onClick={() => handleMenuItemClick('about me', 'left')}>
+            <Image size='mini'style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "" , color:"" , padding:"0.2rem", borderRadius:"5px", margin:"0rem"}} circular src='/zorrocara.png' />
             About me
 
           </Menu.Item>
@@ -70,13 +72,13 @@ const ContainerCenter = () => {
             Skills
           </Menu.Item> */}
 
-          <Menu.Item onClick={() => handleMenuItemClick('work experience', 'right')}>
+          <Menu.Item style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px" , color:"#ADCCEA" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}} onClick={() => handleMenuItemClick('work experience', 'right')}>
             Work Experience
           </Menu.Item>
           
     
 
-          <Menu.Item onClick={() => handleMenuItemClick('contact', 'top')}>
+          <Menu.Item style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px" , color:"#ADCCEA" , padding:"0.2rem", borderRadius:"5px", margin:"0.1rem"}} onClick={() => handleMenuItemClick('contact', 'top')}>
             Contact
           </Menu.Item>
         </Menu>
@@ -97,7 +99,8 @@ const ContainerCenter = () => {
           <Button circular color='linkedin' icon='linkedin' />
           <Button circular color='grey' icon='github' />
         </div>
-
+        
+        
         <div className="acerca">
           <h2>Acerca de mi</h2>
           <p>

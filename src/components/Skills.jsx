@@ -9,23 +9,23 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 function Skills() {
   
   return (
-    <Container style={{ background: '#445355', border: "none"  , padding:"0rem", margin:"0rem" }}>
+    <Container style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem"  }}>
       
       <Button>Skills</Button>
 
-      <Segment style={{ padding: '0' }}>
+      <Segment style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0.5rem" }}>
       <Button>Front-end</Button>
         <AutoplaySlider
       
           bullets={false}
-          organicArrows={true}
+          organicArrows={false}
           infinite={true}
           mobileTouch={true}
           virtualize={true}
           play={true}
           cancelOnInteraction={false} 
           interval={5000}
-          style={{ width: '100%', height: '3.8rem', margin:"0.1rem" }}
+          style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
         >
           <div>
             <Card >
@@ -72,20 +72,20 @@ function Skills() {
         </AutoplaySlider>
       </Segment>
       
-      <Segment>
+      <Segment style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0.5rem", }} >
         
            <Button>Technology</Button>
 <AutoplaySlider
       
           bullets={false}
-          organicArrows={true}
+          organicArrows={false}
           infinite={true}
           mobileTouch={true}
           virtualize={true}
           play={true}
           cancelOnInteraction={false} 
           interval={5000}
-          style={{ width: '100%', height: '3.8rem', margin:"0.1rem" }}
+          style={{ width: '100%', height: '3.8rem', margin:"0.1rem", margin:"0.1rem", background: 'linear-gradient(rgba(229, 255, 0, 0.9), rgba(100, 100, 100, 0.9))', border: "none", padding:"0rem", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)"}}
         >
          
      <div>
