@@ -6,8 +6,8 @@ import { Loader, Progress, Card, Image, Container, Button } from 'semantic-ui-re
 
 
 const Loader3D = () => {
-  const [loading, setLoading] = useState(true); // Estado para controlar la visibilidad del loader
-  const [progress, setProgress] = useState(0); // Estado para el progreso de la carga
+  const [loading, setLoading] = useState(true); 
+  const [progress, setProgress] = useState(0); 
 
   useEffect(() => {
     const simulateProgress = () => {
@@ -15,22 +15,22 @@ const Loader3D = () => {
         // Incrementa el progresp en cada iteracion
         setProgress((prevProgress) => {
           if (prevProgress === 100) {
-            // Si se llega al 100%, oculta el loader después de un breve retrasp
+            
             setTimeout(() => {
               setLoading(false);
             }, 500);
-            clearInterval(interval); // Detiene la simullación de progreso
+            clearInterval(interval); 
             return 100;
           } else {
-            return prevProgress + 1; // Incrementad el progreso en 10 unidades
+            return prevProgress + 10; 
           }
         });
-      }, 200); // Intervalo de tiempo para simular la cargal
+      }, 300);
     };
 
     simulateProgress();
 
-    return () => clearInterval(); // Limpia el intervalo al desmontar el componente
+    return () => clearInterval(); 
   }, []);
 
   return (
