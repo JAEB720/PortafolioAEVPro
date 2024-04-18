@@ -49,7 +49,7 @@ const Loader3D = () => {
    
     <div className="image-container">
      
-      <Image fluid src="/gif/FoxLoader2.gif" alt="#" size='medium'  style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "1rem", marginTop: "0rem", }}/>
+      <Image fluid src="/gif/FoxLoader2.gif" alt="#" size='medium'  style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0.8rem", marginTop: "0rem", }}/>
     </div>
     <Button fluid style={{  background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "1rem", marginTop: "-6.5rem",  }} >
       <Progress  percent={progress} indicating  > 
