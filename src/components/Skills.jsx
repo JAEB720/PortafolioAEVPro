@@ -2,18 +2,20 @@ import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
-import { Container, Card, Segment, Button, Icon, Image } from 'semantic-ui-react';
+import { Container, Card, Segment, Button, Icon, Image, Grid } from 'semantic-ui-react';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 function Skills() {
   
   return (
-    <Container style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem"  }}>
-      
+    <Container className='CSkill' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem", width:"21.5rem",   }}>
+      <Grid>
+      <Grid.Row computer={2} mobile={16} style={{ margin: '1rem' }}>
+      <Grid.Column >
       <Button>Skills</Button>
 
-      <Segment style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0.5rem" }}>
+      <Segment  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0.5rem" }}>
       <Button>Front-end</Button>
         <AutoplaySlider
       
@@ -133,53 +135,10 @@ function Skills() {
         </AutoplaySlider>
 </Segment>
 
-{/* 
-<Segment>
-<Button>Back-End</Button>
-<AutoplaySlider
-        animation="cubeAnimation"
-          className="logo-slider"
-          bullets={false}
-          organicArrows={true}
-          infinite={true}
-          mobileTouch={true}
-          virtualize={true}
-          play={true}
-          cancelOnInteraction={false} 
-          interval={5000}
-          style={{ width: '100%', height: '3.8rem', margin:"0.1rem" }}
-        >
-     <div>
-            <Card>
-              <Card.Content>
-                <Card.Description>
-                  <img src="/skills/js.png" alt="Logo 4" style={{ maxWidth: '100%', maxHeight: '100%' }} />
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <Card.Content>
-                <Card.Description>
-                  <img src="/skills/js.png" alt="Logo 5" style={{ maxWidth: '100%', maxHeight: '100%' }} />
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-          <div>
-            <Card>
-              <Card.Content>
-                <Card.Description>
-                  <img src="/skills/js.png" alt="Logo 6" style={{ maxWidth: '100%', maxHeight: '100%' }} />
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-            
-        </AutoplaySlider>
-</Segment> */}
 
+   </Grid.Column>
+</Grid.Row>
+</Grid>
     </Container>
   );
 }

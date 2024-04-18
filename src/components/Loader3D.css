@@ -1,0 +1,13 @@
+.CLoader {
+  /* width: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+  /* background: linear-gradient(rgba(229, 255, 0, 0.81), rgba(100, 100, 100, 0.91)); */
+  border: solid 5px yellow;
+  padding: 0rem;
+  margin-top: 0rem;
+  position: absolute;
+}

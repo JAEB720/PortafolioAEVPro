@@ -1,0 +1,31 @@
+/* .ContenedorCenter{
+    background-color: rgb(238, 238, 238);
+ }
+  */
+  
+  .animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación y la sombra */
+    border: none;
+    padding: 0.5rem;
+    /* box-shadow: 0 90px 16px rgba(70, 70, 255, 0.99); Sombra predeterminada */
+  }
+  
+  .animated-card:hover {
+    transform: scale(1.1); /* Escala al hacer hover */
+    box-shadow: 0 5px 15px rgba(198, 198, 254, 0.91); /* Aumenta la sombra al hacer hover */
+  }
+  
+  
+
+@media(max-width:768px){
+.ContenedorCenter{
+    text-align: center;
+   background-color: aqua;
+}
+.CSkill{
+    /* width: "22rem"; */
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+}

@@ -1,42 +1,38 @@
-import { useState } from 'react'
-import {  Button, Card, } from 'semantic-ui-react';
-
-// import Direccion from './components/Direccion';
+import { useState, useEffect } from 'react';
+import { Button, Card } from 'semantic-ui-react';
 import ContainerCenter from './components/ContainerCenter';
-// import Section from './components/Section';
-// import Portafolio from './components/Portfolio';
-// import Contact from './components/Contact'
 import Image3DViewer from './background/Image3DViewer';
-import './App.css'
+import './App.css';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
-
+import Loader3D from './components/Loader3D';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 300000);
+
+    return () => clearTimeout(timer); 
+  }, []);
 
   return (
-    <>
-      <div className='contenedorP'>
-   <Image3DViewer/>
-{/* <Direccion/> */}
-<ContainerCenter/>
-{/* <Section/> */}
-<Skills/>
-<Portfolio/>
-{/* <Contact/> */}
+    <div className="app-container">
+      {loading && <Loader3D />} 
 
- 
-
-  
-  
-
-
-      </div>
-    
-    </>
-  )
+      {!loading && (
+        <div className='contenedorP'>
+          <Image3DViewer/>
+          <ContainerCenter/>
+          <Skills/>
+          <Portfolio/>
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default App
-
+export default App;

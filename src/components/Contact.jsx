@@ -1,36 +1,60 @@
-import React, { useRef } from 'react';
-import { Card, Image, Segment, Button, Header, Menu, MenuItem, Container, Sidebar } from 'semantic-ui-react';
+import React, { useState } from 'react';
+import { Form, Button } from 'semantic-ui-react';
 
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-function Contact() {
-  const experienciaSectionRef = useRef(null);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = () => {
+    // Aquí puedes agregar la lógica para enviar el formulario, como usar una API de correo electrónico
+    console.log('Formulario enviado:', formData);
+    // Aquí podrías también reiniciar el estado del formulario
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
   return (
-    <Container lassName="pie" id="contacto">
-      {/* CONTACTO */}
-      <Segment id="Contacto">
-        <h2>Contacto</h2>
-        <div className="contenedor-contacto">
-          <div className="cont1">
-            <div className="phoneC">
-              <img src="iconos/phone.svg" alt="" />
-            </div>
-            <div className="Cspan"><span>NúmeroCelular</span></div>
-            <div className="CTexto"><p>8138621542</p></div>
-          </div>
-          <div className="cont2">
-            <div className="mailC">
-              <img src="iconos/mail 1.svg" alt="" />
-            </div>
-            <div className="Cspan"><span>Email</span></div>
-            <div className="CTexto"><p>jeuescobarbernudez@gmail.com</p></div>
-          </div>
-        </div>
-      </Segment>
-{/* 
-      <p class="author">🦊 Hecho por <a href="https://github.com/JAEB720" target="_blank">JAEB720</a></p> */}
-    </Container>
-   
+    <Form>
+      <Form.Field>
+        <label>Nombre</label>
+        <input 
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+      </Form.Field>
+      <Form.Field>
+        <label>Correo electrónico</label>
+        <input 
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </Form.Field>
+      <Form.Field>
+        <label>Mensaje</label>
+        <textarea 
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+        />
+      </Form.Field>
+      <Button type='submit' onClick={handleSubmit}>Enviar</Button>
+    </Form>
   );
-}
+};
 
 export default Contact;
