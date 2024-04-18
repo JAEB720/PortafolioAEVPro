@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Card, Grid, Image } from 'semantic-ui-react';
 
-import 'react-awesome-slider/dist/styles.css';
 
 const Portfolio = () => {
   return (

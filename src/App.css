@@ -16,6 +16,33 @@
   }
   
   
+::-webkit-scrollbar {
+  width:5px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #d7eaff;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(203, 100%, 72%);
+  border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00cff3;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+  
+
+
+
 
 @media(max-width:768px){
 .ContenedorCenter{
