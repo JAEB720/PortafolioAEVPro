@@ -22,10 +22,10 @@ const Loader3D = () => {
             clearInterval(interval); 
             return 100;
           } else {
-            return prevProgress + 10; 
+            return prevProgress + 5; 
           }
         });
-      }, 300);
+      }, 500);
     };
 
     simulateProgress();
