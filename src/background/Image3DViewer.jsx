@@ -67,7 +67,7 @@ const Image3DViewer = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -999 }} />;
+  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -999 }} />;
 };
 
 export default Image3DViewer;

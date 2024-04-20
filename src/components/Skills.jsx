@@ -102,7 +102,7 @@ virtualize={true}
 play={true}
 cancelOnInteraction={false} 
 interval={5000}
-style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
+style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
 >
 <div>
 <Card >
@@ -140,7 +140,7 @@ style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-g
 
 <Grid.Column computer={8} mobile={16}>
 
-<Card fluid className="animated-card" style={{ border: "none", padding: "0.5rem",}}>
+<Card fluid className="animated-card" style={{ border: "none", padding: "0.5rem", marginTop:"1rem"}}>
   <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))', }}>
     <Card.Header>Languages</Card.Header>
 
@@ -156,9 +156,9 @@ virtualize={true}
 play={true}
 cancelOnInteraction={false} 
 interval={5000}
-style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
+style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
 >
-<div>
+<div >
 <Card >
   <Card.Content > 
     <Card.Description  >
@@ -199,7 +199,7 @@ style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-g
 
 <Grid.Column computer={8} mobile={16}>
 
-<Card fluid className="animated-card" style={{ border: "none", padding: "0.5rem",}}>
+<Card fluid className="animated-card" style={{ border: "none", padding: "0.5rem", marginTop:"1rem"}}>
   <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))', }}>
     <Card.Header>Technologies</Card.Header>
 
@@ -215,7 +215,7 @@ virtualize={true}
 play={true}
 cancelOnInteraction={false} 
 interval={5000}
-style={{ width: '100%', height: '3.8rem', margin:"0.1rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
+style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
 >
 <div>
 <Card >

@@ -72,7 +72,7 @@ const ContainerCenter = () => {
 
         <div className="imagen0"></div>
         <div className="info1">
-          <Card centered style={{ background: 'black', border: "solid 3px", color: "#ADCCEA", borderRadius: "25px", overflow: "hidden", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }} >
+          <Card centered style={{ background: 'black', border: "solid blue 1px", color: "#ADCCEA", borderRadius: "25px", overflow: "hidden", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }} >
             <Image src='/ae.jpg' wrapped ui={false} style={{ overflow: "hidden" }} />
           </Card>
 
