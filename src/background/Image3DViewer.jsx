@@ -52,7 +52,22 @@ const Image3DViewer = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -1 }} />;
+  // CSS para hacer que el contenedor cubra todo el fondo
+  useEffect(() => {
+    const handleResize = () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -999 }} />;
 };
 
 export default Image3DViewer;

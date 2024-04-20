@@ -26,7 +26,9 @@ const Portfolio = () => {
             </Card>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row style={{ marginBottom: '20px' }}>
+
+
+       
           <Grid.Column computer={8} mobile={16}>
             <Card fluid className="animated-card" style={{ border: "none", padding: "0.5rem", }}>
               <Card.Content>
@@ -45,7 +47,7 @@ const Portfolio = () => {
               </Card.Content>
             </Card>
           </Grid.Column>
-        </Grid.Row>
+      
       </Grid>
     </Container>
   );
