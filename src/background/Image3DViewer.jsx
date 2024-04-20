@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-import { Button, Card } from 'semantic-ui-react';
 
 const Image3DViewer = () => {
   const containerRef = useRef();
@@ -53,7 +52,7 @@ const Image3DViewer = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0,  }} />;
+  return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -999 }} />;
 };
 
 export default Image3DViewer;
