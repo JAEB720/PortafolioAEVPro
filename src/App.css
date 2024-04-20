@@ -47,12 +47,12 @@ html {
 @media(max-width:768px){
 .ContenedorCenter{
     text-align: center;
-   background-color: aqua;
+   /* background-color: aqua; */
 }
 .CSkill{
     /* width: "22rem"; */
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    /* background-color: blue; */
 }
 }
