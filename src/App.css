@@ -2,6 +2,10 @@
     background-color: rgb(238, 238, 238);
  }
   */
+
+  .contenedorP{
+    background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))'
+  }
   
   .animated-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación y la sombra */

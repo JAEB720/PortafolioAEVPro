@@ -14,7 +14,7 @@ function App() {
     
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 1000);
 
     return () => clearTimeout(timer); 
   }, []);
@@ -24,12 +24,12 @@ function App() {
       {loading && <Loader3D />} 
 
       {!loading && (
-        <div className='contenedorP'>
+        <Card fluid className='contenedorP' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))' }} >
           <Image3DViewer/>
           <ContainerCenter/>
           <Skills/>
           <Portfolio/>
-        </div>
+        </Card>
       )}
     </div>
   );
