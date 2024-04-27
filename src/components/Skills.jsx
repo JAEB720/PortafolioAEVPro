@@ -32,11 +32,11 @@ function Skills() {
           style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
         >
           <div>
-            <Card >
-              <Card.Content > 
-                <Card.Description  >
-                  <Image  src="/skills/html.png" alt="Logo 1" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-                  <Button>HTML</Button>
+            <Card  >
+              <Card.Content textAlign='center' > 
+                <Card.Description  ><Button >
+                  <Image  src="/skills/html.png" alt="Logo 1" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+                  HTML</Button>
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -44,9 +44,9 @@ function Skills() {
           <div>
             <Card>
               <Card.Content>
-                <Card.Description>
-                  <Image src="/skills/css.png" alt="Logo 2" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-                  <Button>CSS</Button>
+                <Card.Description> <Button>
+                  <Image src="/skills/css.png" alt="Logo 2" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+                 CSS</Button>
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -54,9 +54,9 @@ function Skills() {
           <div>
             <Card>
               <Card.Content>
-                <Card.Description>
-                  <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-                  <Button>JavaScript</Button>
+                <Card.Description>  <Button>
+                  <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }}/>
+                JavaScript</Button>
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -65,9 +65,9 @@ function Skills() {
           <div>
             <Card>
               <Card.Content>
-                <Card.Description>
-                  <Image src="/skills/react.png" alt="Logo 4" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-                  <Button>React</Button>
+                <Card.Description> <Button>
+                  <Image src="/skills/react.png" alt="Logo 4" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+                 React</Button>
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -107,9 +107,9 @@ style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gra
 <div>
 <Card >
   <Card.Content > 
-    <Card.Description  >
-      <Image  src="/skills/node.png" alt="Logo 1" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Node</Button>
+    <Card.Description  >  <Button>
+      <Image  src="/skills/node.png" alt="Logo 1" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.5rem" }}/>
+    Node</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -117,9 +117,9 @@ style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gra
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/express.png" alt="Logo 2" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Express</Button>
+    <Card.Description><Button>
+      <Image src="/skills/express.png" alt="Logo 2" style={{ maxWidth: '15%', maxHeight: '5%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.5rem" }}/>
+      Express</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -161,9 +161,9 @@ style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gra
 <div >
 <Card >
   <Card.Content > 
-    <Card.Description  >
-      <Image  src="/skills/js.png" alt="Logo 1" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>JavaScript</Button>
+    <Card.Description  > <Button>
+      <Image  src="/skills/js.png" alt="Logo 1" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     JavaScript</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -171,9 +171,9 @@ style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gra
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/python.png" alt="Logo 2" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Python</Button>
+    <Card.Description>  <Button>
+      <Image src="/skills/python.png" alt="Logo 2" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }}/>
+    Python</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -181,9 +181,9 @@ style={{ width: '100%', height: '3.5rem', margin:"0rem", background: 'linear-gra
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>JavaScript</Button>
+    <Card.Description><Button>
+      <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     JavaScript</Button> 
     </Card.Description>
   </Card.Content>
 </Card>
@@ -220,9 +220,9 @@ style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-grad
 <div>
 <Card >
   <Card.Content > 
-    <Card.Description  >
-      <Image  src="/skills/semantic.png" alt="Logo 1" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>React Semantic ui</Button>
+    <Card.Description  ><Button>
+      <Image  src="/skills/semantic.png" alt="Logo 1" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+      React Semantic ui</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -230,9 +230,9 @@ style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-grad
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/opencv.png" alt="Logo 2" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>OpenCV</Button>
+    <Card.Description><Button>
+      <Image src="/skills/opencv.png" alt="Logo 2" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+      OpenCV</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -240,20 +240,9 @@ style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-grad
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/three.png" alt="Logo 3" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Three</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-<div>
-<Card>
-  <Card.Content>
-    <Card.Description>
-      <Image src="/skills/tailwind.png" alt="Logo 3" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Tailwind</Button>
+    <Card.Description> <Button>
+      <Image src="/skills/three.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     Three</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -262,9 +251,9 @@ style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-grad
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/npm.png" alt="Logo 3" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>NPM</Button>
+    <Card.Description> <Button>
+      <Image src="/skills/tailwind.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     Tailwind</Button>
     </Card.Description>
   </Card.Content>
 </Card>
@@ -273,9 +262,20 @@ style={{ width: '100%', height: '3.5em', margin:"0rem", background: 'linear-grad
 <div>
 <Card>
   <Card.Content>
-    <Card.Description>
-      <Image src="/skills/git.png" alt="Logo 4" style={{ maxWidth: '20%', maxHeight: '20%' }} />
-      <Button>Git</Button>
+    <Card.Description> <Button>
+      <Image src="/skills/npm.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     NPM</Button>
+    </Card.Description>
+  </Card.Content>
+</Card>
+</div>
+
+<div>
+<Card>
+  <Card.Content>
+    <Card.Description> <Button>
+      <Image src="/skills/git.png" alt="Logo 4" style={{ maxWidth: '15%', maxHeight: '10%', display:"flex", flexDirection: 'column',  justifyContent: 'center', alignItems: 'center', marginLeft:"6.2rem" }} />
+     Git</Button>
     </Card.Description>
   </Card.Content>
 </Card>
