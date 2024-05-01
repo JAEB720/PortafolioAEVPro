@@ -25,7 +25,7 @@ function App() {
 
       {!loading && (
         <Card fluid className='contenedorP' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', height:"100vh" }} >
-          {/* <Image3DViewer/> */}
+          <Image3DViewer/>
           <ContainerCenter/>
           <Skills/>
           <Portfolio/>
