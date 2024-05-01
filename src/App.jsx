@@ -24,8 +24,8 @@ function App() {
       {loading && <Loader3D />} 
 
       {!loading && (
-        <Card fluid className='contenedorP' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))' }} >
-          <Image3DViewer/>
+        <Card fluid className='contenedorP' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', height:"100vh" }} >
+          {/* <Image3DViewer/> */}
           <ContainerCenter/>
           <Skills/>
           <Portfolio/>
