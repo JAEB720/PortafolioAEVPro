@@ -9,7 +9,7 @@ const Image3DViewer = () => {
 
   const renderer = new THREE.WebGLRenderer();
   function getFOV() {
-    return window.innerWidth <= 768 ? 75 : 66;
+    return window.innerWidth <= 768 ? 74 : 66;
   }
 
   useEffect(() => {
