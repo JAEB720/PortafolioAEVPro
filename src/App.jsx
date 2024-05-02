@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button, Card, Container } from 'semantic-ui-react';
+import { Button, Card } from 'semantic-ui-react';
 import ContainerCenter from './components/ContainerCenter';
 import Image3DViewer from './background/Image3DViewer';
 import './App.css';
@@ -20,19 +20,19 @@ function App() {
   }, []);
 
   return (
-    <Container className="app-container">
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', overflow: 'auto' }}>
+    
       {loading && <Loader3D />} 
 
       {!loading && (
-        <Card fluid className='contenedorP' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))',  }} >
+       <div style={{ position: 'relative', zIndex: 1 }}>
           <Image3DViewer/>
-     
           <ContainerCenter/>
           <Skills/>
           <Portfolio/>
-   </Card>
+        </div>
       )}
-    </Container>
+    </div>
   );
 }
 
