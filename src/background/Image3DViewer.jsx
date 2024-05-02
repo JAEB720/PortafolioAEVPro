@@ -4,10 +4,13 @@ import * as THREE from 'three';
 const Image3DViewer = () => {
   const containerRef = useRef();
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(66, window.innerWidth / window.innerHeight, 0.5, 2000);
+  const camera = new THREE.PerspectiveCamera(getFOV(), window.innerWidth / window.innerHeight, 0.5, 2000);
   camera.position.z = 2;
 
   const renderer = new THREE.WebGLRenderer();
+  function getFOV() {
+    return window.innerWidth <= 768 ? 75 : 66;
+  }
 
   useEffect(() => {
     renderer.setSize(window.innerWidth, window.innerHeight);
