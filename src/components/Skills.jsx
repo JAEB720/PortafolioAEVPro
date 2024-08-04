@@ -9,12 +9,12 @@ function Skills() {
     width: '6rem',
     height: '6rem',
     display: 'flex',
-    flexDirection: 'column', // Arrange items vertically
+    flexDirection: 'column', 
     justifyContent: 'center',
     alignItems: 'center',
     margin: '0.2rem',
-    textAlign: 'center', // Center text horizontally
-    padding: '0.5rem' // Add some padding around the text
+    textAlign: 'center',
+    padding: '0.5rem' 
   };
 
   const containerStyle = {
