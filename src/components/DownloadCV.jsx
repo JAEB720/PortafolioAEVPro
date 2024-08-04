@@ -4,7 +4,7 @@ import { Container, Button, Icon } from 'semantic-ui-react';
 const DownloadCV = () => {
   const handleDownload = () => {
 
-    window.location.href = 'public/docs/CV Alejandro Escobar.pdf';
+    window.location.href = 'https://drive.google.com/file/d/1rA4mzZneoW4Y0EYMl8XI1IkCJe3k_pDq/view?usp=drive_link';
   };
 
   return (
