@@ -9,38 +9,13 @@
 
 
   
-  .animated-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la animación y la sombra */
-    border: none;
-    padding: 0.5rem;
-    /* box-shadow: 0 90px 16px rgba(70, 70, 255, 0.99); Sombra predeterminada */
+
+
+  .awssld__content {
+    background-color: #ffffff;  
   }
   
-  .animated-card:hover {
-    transform: scale(1.1); /* Escala al hacer hover */
-    box-shadow: 0 5px 15px rgba(198, 198, 254, 0.91); /* Aumenta la sombra al hacer hover */
-  }
-  
-  
-::-webkit-scrollbar {
-  width:5px; 
-}
 
-
-::-webkit-scrollbar-track {
-  background-color: #d7eaff;
-}
-
-
-::-webkit-scrollbar-thumb {
-  background-color: hsl(203, 100%, 72%);
-  border-radius: 6px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #00cff3;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -51,6 +26,12 @@ html {
 
 
 @media(max-width:768px){
+
+
+
+
+
+
 .ContenedorCenter{
     text-align: center;
    /* background-color: aqua; */
@@ -61,30 +42,4 @@ html {
     flex-direction: column;
     /* background-color: blue; */
 }
-
- 
-::-webkit-scrollbar {
-  width:5px; 
-}
-
-
-::-webkit-scrollbar-track {
-  background-color: #d7eaff;
-}
-
-
-::-webkit-scrollbar-thumb {
-  background-color: hsl(203, 100%, 72%);
-  border-radius: 6px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #00cff3;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-
 }

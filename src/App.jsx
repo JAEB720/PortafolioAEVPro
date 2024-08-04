@@ -6,6 +6,8 @@ import './App.css';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Loader3D from './components/Loader3D';
+import DownloadCV from './components/DownloadCV';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -14,13 +16,13 @@ function App() {
     
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
 
     return () => clearTimeout(timer); 
   }, []);
 
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', overflow: 'auto' }}>
+    <div style={{ position: 'fixed', top: "1rem", left: 0, width: '103%', height: '100%', overflow: 'auto' }}>
     
       {loading && <Loader3D />} 
 
@@ -28,8 +30,13 @@ function App() {
        <div style={{ position: 'relative', zIndex: 1 }}>
           <Image3DViewer/>
           <ContainerCenter/>
+         
           <Skills/>
+         
           <Portfolio/>
+    
+          <DownloadCV/>
+         
         </div>
       )}
     </div>

@@ -4,7 +4,6 @@ import Section from './Section';
 import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
-import Skills from './Skills';
 
 const ContainerCenter = () => {
   const experienciaSectionRef = useRef(null);
@@ -29,75 +28,76 @@ const ContainerCenter = () => {
     </div>
   );
 
-  const SidebarContentWorkExperience = () => (
-    <div>
-      <Header as='h3'>Work Experience</Header>
-      <Section />
-    </div>
-  );
-
   const handleCloseModal = () => {
     setVisibleModal(false);
   };
 
-  const SidebarContentPortfolio = () => (
-    <Segment>
-      <Portfolio />
-    </Segment>
-  );
-
-  const SidebarContentContact = () => (
-    <Segment>
-      <Contact />
-    </Segment>
-  );
+  const handleRedirect = (url) => {
+    window.location.href = url;
+  };
 
   return (
-    <Container className='ContenedorCenter' style={{ border: "none", padding: "0.2rem", borderRadius: "5px", margin: "0.5rem" }}>
-      <Segment style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0.1rem", }}>
-        <Header as='h2' >
-          <Menu inverted widths={3} style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", margin: "0.5rem", fontSize: "0.5em" }} >
-            <Menu.Item style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px", color: "white", padding: "0.2rem", borderRadius: "5px", margin: "0.1rem" }} onClick={() => handleMenuItemClick('about me', 'left')}>
-              <Image size='mini' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0rem" }} circular src='/zorrocara.png' />
-              About me
-            </Menu.Item>
-            <Menu.Item style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px", color: "#ADCCEA", padding: "0.2rem", borderRadius: "5px", margin: "0.1rem" }} onClick={() => handleMenuItemClick('work experience', 'right')}>
-              Work Experience
-            </Menu.Item>
-            <Menu.Item style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9))', border: "solid 1px", color: "#ADCCEA", padding: "0.2rem", borderRadius: "5px", margin: "0.1rem" }} onClick={() => handleMenuItemClick('contact', 'top')}>
-              Contact
-            </Menu.Item>
-          </Menu>
-        </Header>
+    <Container className='ContenedorCenter' style={{ border: "none", padding: "0.2rem", borderRadius: "5px", margin: "1rem" }}>
+      <Header as='h2'>
+        <Menu fluid 
+          style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", fontSize: "0.5em", width: '320px' }}>
+          <Image size='mini' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0rem" }}
+           circular src='/zorrocara.png' />
 
-        <div className="imagen0"></div>
-        <div className="info1">
-          <Card centered style={{ background: 'black', border: "solid Skyblue 1px", color: "#ADCCEA", borderRadius: "25px", overflow: "hidden", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)" }} >
-            <Image src='/ae.jpg' wrapped ui={false} style={{ overflow: "hidden" }} />
-          </Card>
+          <Menu.Item position="right" 
+            style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5))', border: "none", color: "white", borderRadius: "5px", margin: "0.1rem" }}
+            onClick={() => handleMenuItemClick('about me', 'left')}>
+            sobre mi+
+          </Menu.Item>
+        </Menu>
+      </Header>
 
-          <h2>Hola, soy Alejandro</h2>
-          <h1>Desarrollador web<br />y de software</h1>
-        </div>
+      <div className="imagen0"></div>
+      <div className="info1">
 
-        <div className="redes" id="acerca">
-          <Button circular color='linkedin' icon='linkedin' />
-          <Button circular color='black' icon='github' />
-          <Button circular color='green' icon='whatsapp' />
-          <Button circular color='white' icon='mail' />
-        </div>
+      <Card centered   style={{ position: 'relative', background: 'black', border: "solid Skyblue 1px",
+         color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
+      <Image  src='/AE720.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+      <Image  
+        src='/gif/Fox1.gif' 
+        alt="icon" 
+        style={{ 
+          position: 'absolute', 
+          bottom: '-50px', 
+          right: '-70px', 
+          width: '80%', 
+          height: '60%', 
+       
+        }} 
+      />
+    </Card>
 
-        <div className="acerca">
-          <h2>Acerca de mi</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum alias<br />
-            delectus quaerat at quod sit. Iusto harum repellendus cupiditate. Id velit architecto <br />
-            repellendus illo repudiandae dolor voluptates tenetur nemo aperiam quidem tempora <br />
-            praesentium ipsa maiores illum, minima quia dolorem, laudantium,<br />
-            libero eius? Excepturi culpa porro possimus voluptatem.
-          </p>
-        </div>
-      </Segment>
+
+        <h2 className='hname'>Hola, soy Alejandro</h2>
+        <h1>Desarrollador web<br />y de software</h1>
+      </div>
+
+      <div className="redes" id="acerca" style={{ marginTop:"1rem" }} >
+        <Button circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/feed/')} />
+        <Button circular color='black' icon='github' onClick={() => handleRedirect('https://github.com/JAEB720')} />
+        <Button circular color='green' icon='whatsapp' onClick={() => handleRedirect('https://wa.me/tu_numero')} />
+        <Button circular color='grey' icon='mail' onClick={() => handleMenuItemClick('contact', 'top')} />
+      </div>
+
+      <div className="acerca">
+        <h2 style={{ marginTop: '20px', fontSize: '2rem', lineHeight: '1.5' }}>
+          Acerca de mí
+        </h2>
+        <h4 style={{ fontSize: '1.20rem', lineHeight: '1.6', color: '#333' }}>
+          Soy una persona autodidacta, bastante versátil, responsable, me encanta resolver problemas,
+          me gusta mejorar las cosas para facilitar mi trabajo, me gusta trabajar en equipo pero también
+          sé tomar el mando cuando es necesario. 
+          Tengo experiencia en diferentes áreas, mantenimiento de equipos de oficina,
+          instalación de redes, desarrollo web y desarrollo de software. 
+
+          Sigo adquiriendo conocimientos, perfeccionando mis habilidades para ser un mejor desarrollador y profesional.
+        </h4>
+      </div>
 
       <Sidebar
         as={Menu}
@@ -107,28 +107,33 @@ const ContainerCenter = () => {
         onHide={() => setVisibleSidebar(false)}
         direction={sidebarDirection}
         visible={visibleSidebar}
-        width='huge'
-        style={{ background: '#000000', border: "solid", }}
+        style={{ background: '#000000', border: "solid", width: '320px' }}
       >
-        <Container style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: "40rem" }}>
-          {/* Contenido del Sidebar */}
-          {activeItem === 'about me' && <SidebarContentAboutMe />}
-          {/* {activeItem === 'skills' && <SidebarContentSkills />} */}
-          {activeItem === 'work experience' && <SidebarContentWorkExperience />}
-          {activeItem === 'portfolio' && <SidebarContentPortfolio />}
-          {activeItem === 'contact' && <SidebarContentContact />}
-        </Container>
+     
+        <Button 
+        size='tiny' color='black'
+          icon='close' 
+          onClick={() => setVisibleSidebar(false)} 
+          style={{ 
+            position: 'absolute', 
+            top: '5px', 
+            right: '5px', 
+            borderRadius: '5%', 
+            // background: 'rgba(255, 255, 255, 0.3)', 
+            color: '#ffffff',
+            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+          }} 
+        />
+        
+        {activeItem === 'about me' && <SidebarContentAboutMe />}
       </Sidebar>
 
-      <Modal open={visibleModal} onClose={handleCloseModal}>
-        <Modal.Header>Contact</Modal.Header>
-        <Modal.Content>
+      <Modal size='tiny' open={visibleModal} onClose={handleCloseModal} closeIcon>
+        <Modal.Header>¡Mándame un correo!</Modal.Header>
+        <Modal.Content style={{ marginTop: "-1.5rem", }}>
           <Contact />
         </Modal.Content>
         <Modal.Actions>
-          <Button onClick={handleCloseModal} negative>
-            Close
-          </Button>
         </Modal.Actions>
       </Modal>
     </Container>

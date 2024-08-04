@@ -16,7 +16,7 @@ const Image3DViewer = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     containerRef.current.appendChild(renderer.domElement);
 
-    const texture = new THREE.TextureLoader().load('/ola3.avif');
+    const texture = new THREE.TextureLoader().load('/azulblanco.jpg');
     const material = new THREE.MeshBasicMaterial({ map: texture });
     const geometry = new THREE.PlaneGeometry(14, 8, 15, 9);
 
@@ -55,7 +55,7 @@ const Image3DViewer = () => {
     };
   }, []);
 
-  // CSS para hacer que el contenedor cubra todo el fondo
+  
   useEffect(() => {
     const handleResize = () => {
       renderer.setSize(window.innerWidth, window.innerHeight);

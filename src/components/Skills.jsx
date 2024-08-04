@@ -1,302 +1,116 @@
 import React from 'react';
-import { Container, Card, Grid, Image, Segment, Button } from 'semantic-ui-react';
-import 'react-awesome-slider/dist/styles.css';
-import AwesomeSlider from 'react-awesome-slider';
-import withAutoplay from 'react-awesome-slider/dist/autoplay';
-import { color } from 'three/examples/jsm/nodes/Nodes.js';
-import { Color } from 'three';
+import { Container, Button, Image } from 'semantic-ui-react';
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 function Skills() {
+  const buttonStyle = {
+    background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',
+    color: "white",
+    width: '6rem',
+    height: '6rem',
+    display: 'flex',
+    flexDirection: 'column', // Arrange items vertically
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0.2rem',
+    textAlign: 'center', // Center text horizontally
+    padding: '0.5rem' // Add some padding around the text
+  };
+
+  const containerStyle = {
+    background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(100, 100, 100, 0))',
+    border: "none",
+    padding: "0rem"
+  };
+
+  const gridStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  };
+
   return (
-    <Container style={{ background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(100, 100, 100, 0))', border: "none", padding: "0rem", }}>
-      <Grid columns={2} divided stackable style={{ margin: "0rem" }}>
-        <Grid.Row style={{ margin: '0rem' }}>
-          <Grid.Column computer={8} mobile={16}>
+    <div>
+        <h2 style={{ textAlign: "center",margin: "2rem"}}>Tecnologias</h2>
 
-            <Card fluid className="animated-car" style={{ border: "none", padding: "0.5rem",}}>
-              <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))', }}>
-                <Card.Header>Front-end</Card.Header>
+    <Container style={containerStyle}>
+      <div style={gridStyle}>
 
-                <Segment  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem" }}>
-    
-        <AutoplaySlider
-      
-          bullets={false}
-          organicArrows={false}
-          infinite={true}
-          mobileTouch={true}
-          virtualize={true}
-          play={true}
-          cancelOnInteraction={false} 
-          interval={5000}
-          style={{ width: '100%', height: '4rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
-        >
-          <div>
-            <Card  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', width:"47rem" }} >
-              <Card.Content textAlign='center' > 
-                <Card.Description  ><Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-                  <Image  src="/skills/html.png" alt="Logo 1" style={{ maxWidth: '6%', maxHeight: '10%',}} />
-                  HTML</Button>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-          <div>
-            <Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', width:"47rem" }}>
-              <Card.Content>
-                <Card.Description> <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-                  <Image src="/skills/css.png" alt="Logo 2" style={{ maxWidth: '6%', maxHeight: '10%',}} />
-                 CSS</Button>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-          <div>
-            <Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-              <Card.Content>
-                <Card.Description>  <Button fluid style={{background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-                  <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '6%', maxHeight: '10%', }}/>
-                JavaScript</Button>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-
-          <div>
-            <Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-              <Card.Content>
-                <Card.Description> <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-                  <Image src="/skills/react.png" alt="Logo 4" style={{ maxWidth: '6%', maxHeight: '10%',}} />
-                 React</Button>
-                </Card.Description>
-              </Card.Content>
-            </Card>
-          </div>
-         
-        </AutoplaySlider>
-      </Segment>
-   
-              </Card.Content>
-            </Card>
-          </Grid.Column>
-
-
-
-
-
-<Grid.Column computer={8} mobile={16}>
-
-<Card fluid className="animated-car" style={{ border: "none", padding: "0.5rem", marginTop:"1rem"}}>
-  <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))',   }}>
-    <Card.Header>Back-end</Card.Header>
-
-    <Segment  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem" }}>
-
-<AutoplaySlider
-
-bullets={false}
-organicArrows={false}
-infinite={true}
-mobileTouch={true}
-virtualize={true}
-play={true}
-cancelOnInteraction={false} 
-interval={5000}
-style={{ width: '100%', height: '4rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.9)" }}
->
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }} >
-  <Card.Content > 
-    <Card.Description  >  <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image  src="/skills/node.png" alt="Logo 1" style={{ maxWidth: '6%', maxHeight: '10%',  }}/>
-    Node</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }} >
-  <Card.Content > 
-    <Card.Description  >  <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image  src="/skills/express.png" alt="Logo 1" style={{ maxWidth: '6%', maxHeight: '10%',  }}/>
-    Express</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-
-
-
-</AutoplaySlider>
-</Segment>
-
-  </Card.Content>
-</Card>
-</Grid.Column>
-
-
-
-
-
-
-<Grid.Column computer={8} mobile={16}>
-
-<Card fluid className="animated-car" style={{ border: "none", padding: "0.5rem", marginTop:"1rem"}}>
-  <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))', }}>
-    <Card.Header>Languages</Card.Header>
-
-    <Segment  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem" }}>
-
-<AutoplaySlider
-
-bullets={false}
-organicArrows={false}
-infinite={true}
-mobileTouch={true}
-virtualize={true}
-play={true}
-cancelOnInteraction={false} 
-interval={5000}
-style={{ width: '100%', height: '4rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
->
-<div >
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }} >
-  <Card.Content > 
-    <Card.Description   > <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image  src="/skills/js.png" alt="Logo 1" style={{ maxWidth: '6%', maxHeight: '10%',  }} />
-     JavaScript</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content>
-    <Card.Description>  <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/python.png" alt="Logo 2" style={{ maxWidth: '6%', maxHeight: '10%', }}/>
-    Python</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-{/* <div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', }}>
-  <Card.Content>
-    <Card.Description><Button fluid style={{ display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
-      <Image src="/skills/js.png" alt="Logo 3" style={{ maxWidth: '15%', maxHeight: '10%',  }} />
-     JavaScript</Button> 
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div> */}
-
-
-</AutoplaySlider>
-</Segment>
-
-  </Card.Content>
-</Card>
-</Grid.Column>
-
-<Grid.Column computer={8} mobile={16}>
-
-<Card fluid className="animated-car" style={{ border: "none", padding: "0.5rem", marginTop:"1rem"}}>
-  <Card.Content style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))',  }}>
-    <Card.Header>Technologies</Card.Header>
-
-    <Segment  style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0))', border: "none", padding:"0rem" }}>
-
-<AutoplaySlider
-
-bullets={false}
-organicArrows={false}
-infinite={true}
-mobileTouch={true}
-virtualize={true}
-play={true}
-cancelOnInteraction={false} 
-interval={5000}
-style={{ width: '100%', height: '4rem', margin:"0rem", background: 'linear-gradient(rgba(229, 255, 0, 0.1), rgba(100, 100, 100, 0.1))', border: "none", padding:"0rem",boxShadow: "0 4px 8px rgba(0, 0, 0, 0.9)" }}
->
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content > 
-    <Card.Description  ><Button fluid style={{background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image  src="/skills/semantic.png" alt="Logo 1" style={{ maxWidth: '6%', maxHeight: '10%', }} />
-      React Semantic ui</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content>
-    <Card.Description><Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/opencv.png" alt="Logo 2" style={{ maxWidth: '6%', maxHeight: '10%',}} />
-      OpenCV</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content>
-    <Card.Description> <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/three.png" alt="Logo 3" style={{ maxWidth: '6%', maxHeight: '10%', }} />
-     Three</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem" }}>
-  <Card.Content>
-    <Card.Description> <Button fluid style={{background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/tailwind.png" alt="Logo 3" style={{ maxWidth: '6%', maxHeight: '10%',margin:"0.3rem"}} />
-     Tailwind</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content>
-    <Card.Description> <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/npm.png" alt="Logo 3" style={{ maxWidth: '6%', maxHeight: '10%', margin:"0.3rem"}} />
-     NPM</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-<div>
-<Card style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))',  width:"47rem"  }}>
-  <Card.Content>
-    <Card.Description> <Button fluid style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))', display:"flex", flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color:"white" }}>
-      <Image src="/skills/git.png" alt="Logo 4" style={{ maxWidth: '6%', maxHeight: '10%',margin:"0.2rem" }} />
-     Git</Button>
-    </Card.Description>
-  </Card.Content>
-</Card>
-</div>
-
-</AutoplaySlider>
-</Segment>
-
-  </Card.Content>
-</Card>
-</Grid.Column>
-
-         
-        </Grid.Row>
-      </Grid>
+      <Button circular style={buttonStyle}>
+          <Image src="/skills/visualStudio.png" alt="Visual SC Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+         Visual Studio
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/html.png" alt="HTML Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          HTML
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/css.png" alt="CSS Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          CSS
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/js.png" alt="JavaScript Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          JavaScript
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/react.png" alt="React Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          React
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/semantic.png" alt="Semantic Logo" style={{ maxWidth: '50%', marginBottom: '0.1rem' }} />
+          React Semantic
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/node.png" alt="Node Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Node
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/express.png" alt="Express Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Express
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/python.png" alt="Python Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Python
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/git.png" alt="Git Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Git
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/Android.png" alt="Android Logo" style={{ maxWidth: '55%', marginBottom: '0.5rem' }} />
+         Android Studio
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/Kotlin.png" alt="Kotlin Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Kotlin
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/anaconda.png" alt="Anaconda Logo" style={{ maxWidth: '50%', marginBottom: '0.1rem' }} />
+          Anaconda 
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/Spyder.png" alt="Spyder Logo" style={{ maxWidth: '80%', marginBottom: '0.1rem' }} />
+          Spyder
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/numpy.png" alt="NumpyLogo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Numpy
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/opencv.png" alt="Opencv Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          Open CV
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/pytorch.png" alt="Pytorch Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
+          PyTorch
+        </Button>
+        <Button circular style={buttonStyle}>
+          <Image src="/skills/YOLOv8.png" alt="Yolov8 Logo" style={{ maxWidth: '100%', marginBottom: '0.5rem' }} />
+          YOLOv8
+        </Button>
+      </div>
     </Container>
+    </div>
   );
 }
 

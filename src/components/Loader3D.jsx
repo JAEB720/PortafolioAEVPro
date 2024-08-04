@@ -12,7 +12,7 @@ const Loader3D = () => {
   useEffect(() => {
     const simulateProgress = () => {
       const interval = setInterval(() => {
-        // Incrementa el progresp en cada iteracion
+        
         setProgress((prevProgress) => {
           if (prevProgress === 100) {
             
@@ -22,7 +22,7 @@ const Loader3D = () => {
             clearInterval(interval); 
             return 100;
           } else {
-            return prevProgress + 5; 
+            return prevProgress + 25; 
           }
         });
       }, 500);
@@ -34,22 +34,27 @@ const Loader3D = () => {
   }, []);
 
   return (
-    <Card fluid style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', background: 'linear-gradient(rgba(252, 252, 252, 1), rgba(252, 252, 252,1))', border: "none", padding: "0rem", marginTop: "0rem",  position: "absolute" }}>
+    <Card fluid style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh',
+     background: 'linear-gradient(rgba(252, 252, 252, 1), rgba(252, 252, 252,1))', border: "none", padding: "0rem", marginTop: "0rem",  position: "absolute" }}>
 
-    <Card fluid className={`loader-container ${loading ? '' : 'hide'}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0rem", marginTop: "0rem",  position: "absolute" }}>
+    <Card fluid className={`loader-container ${loading ? '' : 'hide'}`} 
+    style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', 
+    background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0rem", marginTop: "0rem",  position: "absolute" }}>
 
     {/* <div className="custom-loader">
       <Loader active size='large'style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',  }}/>
     </div> */}
 
-    <Card fluid className="progress-bar" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0rem", marginTop: "0rem",   }}>
+    <Card fluid className="progress-bar" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh',
+       background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0rem", marginTop: "0rem",   }}>
    
 
    
    
     <div className="image-container">
      
-      <Image fluid src="/gif/FoxLoader2.gif" alt="#" size='medium'  style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0.8rem", marginTop: "0rem", }}/>
+      <Image fluid src="/gif/FoxLoader2.gif" alt="#" size='medium'  
+      style={{ background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "0.8rem", marginTop: "0rem", }}/>
     </div>
     <Button fluid style={{  background: 'linear-gradient(rgba(252, 252, 252, 0.81), rgba(252, 252, 252, 0.91))', border: "none", padding: "1rem", marginTop: "-6.5rem",  }} >
       <Progress  percent={progress} indicating  > 
