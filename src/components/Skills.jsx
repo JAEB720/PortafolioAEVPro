@@ -61,6 +61,10 @@ function Skills() {
           React Semantic
         </Button>
         <Button circular style={buttonStyle}>
+          <Image src="/skills/three.png" alt="Semantic Logo" style={{ maxWidth: '50%', marginBottom: '0.1rem' }} />
+          Three
+        </Button>
+        <Button circular style={buttonStyle}>
           <Image src="/skills/node.png" alt="Node Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
           Node
         </Button>
