@@ -16,18 +16,18 @@ function App() {
     
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 4000);
 
     return () => clearTimeout(timer); 
   }, []);
 
   return (
-    <div style={{ position: 'fixed', top: "1rem", left: 0, width: '103%', height: '100%', overflow: 'auto' }}>
+    <div style={{   width: '100%', height: '100%', overflow: 'auto' }}>
     
       {loading && <Loader3D />} 
 
       {!loading && (
-       <div style={{ position: 'relative', zIndex: 1 }}>
+       <div >
           <Image3DViewer/>
           <ContainerCenter/>
          

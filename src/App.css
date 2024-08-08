@@ -3,6 +3,35 @@
  }
   */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3d2ff;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #86a3ff;
+}
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #62c6ff #f1f1f100;
+}
+
+
+
+
+
+
+
   body{
     background-color: #b2f3ff;
   }

@@ -8,9 +8,9 @@ const DownloadCV = () => {
   };
 
   return (
-    <div>
+    <div  >
          <h2 style={{textAlign: "center",marginTop: "5rem"}}>Curriculum</h2>
-    <Container textAlign="center" style={{ margin: '2em' }}>
+    <Container textAlign="center" style={{ margin: '2rem' }}>
       <Button color="blue" onClick={handleDownload}>
         <Icon name="download" />
         Descargar CV
