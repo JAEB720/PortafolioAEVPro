@@ -42,7 +42,7 @@ const ContainerCenter = () => {
         <Menu fluid 
           style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", fontSize: "0.5em", width: '320px' }}>
           <Image size='mini' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0rem" }}
-           circular src='public/zorrocara.png' />
+           circular src='./public/zorrocara.png' />
 
           <Menu.Item position="right" 
             style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5))', border: "none", color: "white", borderRadius: "5px", margin: "0.1rem" }}
@@ -57,7 +57,7 @@ const ContainerCenter = () => {
 
       <Card centered   style={{ position: 'relative', background: 'white', border: "solid Skyblue 1px",
          color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
-      <Image  src='public/logosnew/SORAK-.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+      <Image  src='./public/logosnew/SORAK-.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
       <Image  
         src='/gif/Fox1.gif' 
         alt="icon" 
