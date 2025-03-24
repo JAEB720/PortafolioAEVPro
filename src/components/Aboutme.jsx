@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image } from 'semantic-ui-react';
+import { Container, Image, Card } from 'semantic-ui-react';
 
 const Aboutme = () => {
   return (
@@ -9,11 +9,20 @@ const Aboutme = () => {
         display: 'flex', 
         flexDirection: 'column', 
         alignItems: 'center', 
-        padding: '1rem 1rem',
+        padding: '2.5rem 0rem',
         color: '#ffffff',
-        textAlign: 'center'
+        textAlign: 'center',
+        
       }}
     >
+
+<Card centered size='mini'  style={{  background: 'white', border: "solid Skyblue 1px",
+         color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
+      <Image  src='AE720.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+     </Card>
+
+
+
       <h2 style={{ 
         fontSize: '2rem', 
         
@@ -25,6 +34,7 @@ const Aboutme = () => {
         lineHeight: '1.5', 
     
       }}>
+        
         Soy un apasionado del desarrollo tecnológico. Mi trayecto en la programación comenzó en el desarrollo web,
         lo cual me ha llevado en un corto y largo camino hasta proyectos de visión artificial,
         tecnología de la cual estoy fascinado. La he usado para la detección de objetos y procesamiento de video.

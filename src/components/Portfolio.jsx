@@ -41,11 +41,13 @@ const Portfolio = () => {
     boxShadow: '0px 20px 30px rgba(0, 0, 0, 0.8)'  }}>
       
       <AutoplaySlider
-      organicArrows={false}
+      organicArrows={true}
         play={true}
         cancelOnInteraction={false} 
         interval={3000} 
         bullets={false} 
+        
+      
     
         className="portfolio-slider"
         style={sliderStyle}

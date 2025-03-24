@@ -80,14 +80,14 @@ function Skills() {
           <Image src="/skills/git.png" alt="Git Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
           Git
         </Button>
-        <Button circular style={buttonStyle}>
+        {/* <Button circular style={buttonStyle}>
           <Image src="/skills/Android.png" alt="Android Logo" style={{ maxWidth: '55%', marginBottom: '0.5rem' }} />
          Android Studio
         </Button>
         <Button circular style={buttonStyle}>
           <Image src="/skills/Kotlin.png" alt="Kotlin Logo" style={{ maxWidth: '50%', marginBottom: '0.5rem' }} />
           Kotlin
-        </Button>
+        </Button> */}
         <Button circular style={buttonStyle}>
           <Image src="/skills/anaconda.png" alt="Anaconda Logo" style={{ maxWidth: '50%', marginBottom: '0.1rem' }} />
           Anaconda 

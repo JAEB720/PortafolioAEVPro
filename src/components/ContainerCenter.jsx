@@ -42,7 +42,7 @@ const ContainerCenter = () => {
         <Menu fluid 
           style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", fontSize: "0.5em", width: '320px' }}>
           <Image size='mini' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0rem" }}
-           circular src='/zorrocara.png' />
+           circular src='public/zorrocara.png' />
 
           <Menu.Item position="right" 
             style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5))', border: "none", color: "white", borderRadius: "5px", margin: "0.1rem" }}
@@ -55,18 +55,20 @@ const ContainerCenter = () => {
       <div className="imagen0"></div>
       <div className="info1">
 
-      <Card centered   style={{ position: 'relative', background: 'black', border: "solid Skyblue 1px",
+      <Card centered   style={{ position: 'relative', background: 'white', border: "solid Skyblue 1px",
          color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
-      <Image  src='/AE720.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+      <Image  src='public/logosnew/SORAK-.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
       <Image  
         src='/gif/Fox1.gif' 
         alt="icon" 
         style={{ 
+          background: "transparent",
           position: 'absolute', 
           bottom: '-50px', 
           right: '-70px', 
           width: '80%', 
           height: '60%', 
+        
        
         }} 
       />
@@ -77,11 +79,12 @@ const ContainerCenter = () => {
         <h1>Desarrollador web<br />y de software</h1>
       </div>
 
-      <div className="redes" id="acerca" style={{ marginTop:"1rem" }} >
-        <Button circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/feed/')} />
-        <Button circular color='black' icon='github' onClick={() => handleRedirect('https://github.com/JAEB720')} />
-        <Button circular color='green' icon='whatsapp' onClick={() => handleRedirect('https://wa.me/tu_numero')} />
-        <Button circular color='grey' icon='mail' onClick={() => handleMenuItemClick('contact', 'top')} />
+      <div className="redes" id="acerca" style={{ marginTop:"0.5rem" }} >
+      <h3><br />Contactame!</h3>
+        <Button size='big' circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/feed/')} />
+        <Button size='big' circular color='black' icon='github' onClick={() => handleRedirect('https://github.com/JAEB720')} />
+        <Button size='big' circular color='green' icon='whatsapp' onClick={() => handleRedirect('https://wa.me/tu_numero')} />
+        <Button size='big' circular color='grey' icon='mail' onClick={() => handleMenuItemClick('contact', 'top')} />
       </div>
 
       <div className="acerca">
