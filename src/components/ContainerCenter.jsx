@@ -33,7 +33,7 @@ const ContainerCenter = () => {
   };
 
   const handleRedirect = (url) => {
-    window.location.href = url;
+    window.open(url, '_blank', 'noopener,noreferrer'); 
   };
 
   return (
@@ -81,7 +81,7 @@ const ContainerCenter = () => {
 
       <div className="redes" id="acerca" style={{ marginTop:"0.5rem" }} >
       <h3><br />Contactame!</h3>
-        <Button size='big' circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/feed/')} />
+        <Button size='big'   target='_blank' circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/in/alejandro-escobar-447330260/')} />
         <Button size='big' circular color='black' icon='github' onClick={() => handleRedirect('https://github.com/JAEB720')} />
         <Button size='big' circular color='green' icon='whatsapp' onClick={() => handleRedirect('https://wa.me/tu_numero')} />
         <Button size='big' circular color='grey' icon='mail' onClick={() => handleMenuItemClick('contact', 'top')} />
@@ -114,15 +114,15 @@ const ContainerCenter = () => {
       >
      
         <Button 
-        size='tiny' color='black'
+        size='tiny' 
           icon='close' 
           onClick={() => setVisibleSidebar(false)} 
           style={{ 
             position: 'absolute', 
             top: '5px', 
-            right: '5px', 
+            right: '-5px', 
             borderRadius: '5%', 
-            // background: 'rgba(255, 255, 255, 0.3)', 
+            background: 'rgba(0,0,0)', 
             color: '#ffffff',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
           }} 

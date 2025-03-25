@@ -1,7 +1,14 @@
-import React from 'react';
-import { Container, Image, Card } from 'semantic-ui-react';
+
+import React, { useRef, useState } from 'react';
+import { Container, Image, Card, Button } from 'semantic-ui-react';
 
 const Aboutme = () => {
+
+
+  const handleRedirect = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer'); 
+  };
+
   return (
     <Container 
       fluid
@@ -46,8 +53,81 @@ const Aboutme = () => {
         personas, lo cual me ayuda a crecer tanto personal como profesionalmente.<br /><br />
 
         Soy multifacético, capaz de adaptarme a diferentes roles y situaciones.
-        Próximamente, comenzaré mis estudios universitarios en ingeniería de software,
+        Por ello, sigo preparandome y especializadome en diferentes areas de la tecnología,
         lo que me permitirá seguir expandiendo mis conocimientos y habilidades.<br /><br />
+
+ <h3  >Educación</h3>
+        
+
+<div style={{ marginTop:"0.5rem", display: 'flex', gap: '40px', marginBottom: '10px',  display: 'flex', alignItems: 'center', justifyContent: 'center', }} >
+
+<div style={{ textAlign: 'center',  }}>
+      <Button size='big'  circular color='white' 
+  onClick={() => handleRedirect('https://www.academlo.com/')} 
+  
+  style={{ 
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0',
+    width: '50px', 
+    height: '50px', 
+    overflow: 'hidden' ,
+      margin: '0 auto 5px auto'
+  }}
+>
+  <Image src='a.png' ui={true} 
+    style={{ 
+      width: 'auto',
+      height: '60%', 
+      maxWidth: '60%',
+      objectFit: 'contain' 
+    }} 
+  />
+</Button>
+<p style={{ fontSize: '0.7rem', color: '#F9844A', margin: '0' }}>Desarrolo Web <br />Full stack</p>
+</div>
+
+
+<div>
+<Button size='big' circular color='white' 
+  onClick={() => handleRedirect('https://uveg.edu.mx/index.php/es/')}
+  style={{ 
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0',
+    width: '50px', 
+    height: '50px', 
+    overflow: 'hidden',
+      margin: '0 auto 5px auto'
+  }}
+>
+  <Image  src='uveg.png'  ui={true} 
+    style={{ 
+      width: 'auto',
+      height: '60%', 
+      maxWidth: '60%',
+      objectFit: 'contain' 
+    }} 
+  />
+        </Button>
+        <p style={{ fontSize: '0.7rem', color: '#68A9E0', margin: '0' }}>Universidad <br /> Ing. de Software</p>
+      </div>
+
+</div> 
+
+<div style={{ margin:"0.5rem" }} >
+     
+     <Button size='big'  circular color='white'  onClick={() => handleRedirect('https://academia.tinoreste.com/')}>
+<Image  centered  src='tin.png' wrapped ui={true} style={{ width: '150px', height: '25px', borderRadius: '50%' }} />
+         </Button>
+         <p style={{ fontSize: '0.7rem', color: '#7AE582', margin: '0' }}>Tecnología 4.0</p>
+             </div> 
+<br />
+
+
+      
 
         "Los sueños son solo mentiras que algún día dejarán de serlo."<br /><br />
 
