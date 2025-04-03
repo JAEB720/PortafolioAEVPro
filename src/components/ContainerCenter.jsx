@@ -75,12 +75,17 @@ const ContainerCenter = () => {
     </Card>
 
 
-        <h2 className='hname'>Hola, soy Alejandro</h2>
-        <h1>Desarrollador web<br />y de software</h1>
+      <h3 className='hname' style={{ fontFamily: 'monaco,Consolas,Lucida Console,monospace', lineHeight: '1.6', color: '#333',  }}>
+       Hola, soy Alejandro
+    </h3>
+
+        <h1 style={{ fontFamily: 'Source Code Pro, monospace', lineHeight: '1.6', color: '#3993DD' }} >
+          Desarrollador web<br />y de software</h1>
       </div>
 
-      <div className="redes" id="acerca" style={{ marginTop:"0.5rem" }} >
-      <h3><br />Contactame!</h3>
+      <div className="redes" id="acerca" style={{ marginTop:"0.5rem",  }} >
+      <h3 style={{ fontFamily: 'Source Code Pro, monospace', lineHeight: '1.6', color: '#333' }} >
+        <br /> Contactame!</h3>
         <Button size='big'   target='_blank' circular color='linkedin' icon='linkedin' onClick={() => handleRedirect('https://www.linkedin.com/in/alejandro-escobar-447330260/')} />
         <Button size='big' circular color='black' icon='github' onClick={() => handleRedirect('https://github.com/JAEB720')} />
         <Button size='big' circular color='green' icon='whatsapp' onClick={() => handleRedirect('https://wa.me/tu_numero')} />
@@ -91,7 +96,7 @@ const ContainerCenter = () => {
         <h2 style={{ marginTop: '20px', fontSize: '2rem', lineHeight: '1.5' }}>
           Acerca de mí
         </h2>
-        <h4 style={{ fontSize: '1.20rem', lineHeight: '1.6', color: '#333' }}>
+        <h4 style={{ fontSize: '1.20rem', lineHeight: '1.6', color: '#333', fontFamily: 'monaco,Consolas,Lucida Console,monospace', lineHeight: '1.6', }}>
           Soy una persona autodidacta, bastante versátil, responsable, me encanta resolver problemas,
           me gusta mejorar las cosas para facilitar mi trabajo, me gusta trabajar en equipo pero también
           sé tomar el mando cuando es necesario. 

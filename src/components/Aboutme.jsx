@@ -26,6 +26,20 @@ const Aboutme = () => {
 <Card centered size='mini'  style={{  background: 'white', border: "solid Skyblue 1px",
          color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
       <Image  src='AE720.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+        <Image  
+              src='/gif/Fox1.gif' 
+              alt="icon" 
+              style={{ 
+                background: "transparent",
+                position: 'absolute', 
+                bottom: '-50px', 
+                right: '-70px', 
+                width: '80%', 
+                height: '60%', 
+              
+             
+              }} 
+            />
      </Card>
 
 
@@ -39,7 +53,7 @@ const Aboutme = () => {
       <h4 style={{ 
         fontSize: '1rem', 
         lineHeight: '1.5', 
-    
+    fontFamily: 'monaco,Consolas,Lucida Console,monospace'
       }}>
         
         Soy un apasionado del desarrollo tecnológico. Mi trayecto en la programación comenzó en el desarrollo web,
@@ -117,7 +131,8 @@ const Aboutme = () => {
 
 </div> 
 
-<div style={{ margin:"0.5rem" }} >
+<div style={{ margin:"0.5rem", fontSize: '1.20rem', lineHeight: '1.6', color: '#333', 
+  fontFamily: 'monaco,Consolas,Lucida Console,monospace', lineHeight: '1.6',}} >
      
      <Button size='big'  circular color='white'  onClick={() => handleRedirect('https://academia.tinoreste.com/')}>
 <Image  centered  src='tin.png' wrapped ui={true} style={{ width: '150px', height: '25px', borderRadius: '50%' }} />
