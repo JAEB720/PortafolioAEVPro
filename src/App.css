@@ -44,6 +44,24 @@ html {
     background-color: #ffffff;  
   }
 
+  .awssld__bullets button  {
+    background: #000000;
+  }
+  
+  .awssld__bullets button:hover {
+    background: #ff0909;
+  }
+
+   .awssld__bullets .awssld__bullets--active:hover {
+    background-color: #ff0000;
+  }
+   
+
+.awssld__bullets .awssld__bullets--active{
+  background-color: #3993DD;
+}
+
+
   .awssld {
     --organic-arrow-thickness: 4px;
     --organic-arrow-height: 40px;

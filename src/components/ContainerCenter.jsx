@@ -40,13 +40,13 @@ const ContainerCenter = () => {
     <Container className='ContenedorCenter' style={{ border: "none", padding: "0.2rem", borderRadius: "5px", margin: "1rem" }}>
       <Header as='h2'>
         <Menu fluid 
-          style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", fontSize: "0.5em", width: '320px' }}>
+          style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))', border: "", color: "#ADCCEA", padding: "0.3rem", borderRadius: "5px", fontSize: "0.5em", width: '320px' }}>
           <Image size='mini' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3))', border: "", color: "", padding: "0.2rem", borderRadius: "5px", margin: "0rem" }}
            circular src='zorrocara.png' />
-           
+
             <h2  style={{ fontFamily: 'monaco,Consolas,Lucida Console,monospace',
-               lineHeight: '0.5', color: '#333',  fontSize: '0.9rem',
-                marginLeft: "1rem", marginTop: "auto" }}>Alejandro EScobar</h2>
+               lineHeight: '0.5', color: '#84ff00',  fontSize: '0.9rem',
+                marginLeft: "1rem", marginTop: "auto" }}>Alejandro Escobar</h2>
 
           <Menu.Item position="right" 
             style={{ background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5))', border: "none", color: "white", borderRadius: "5px", margin: "0.1rem" }}

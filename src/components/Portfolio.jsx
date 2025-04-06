@@ -45,7 +45,7 @@ const Portfolio = () => {
         play={true}
         cancelOnInteraction={false} 
         interval={3000} 
-        bullets={false} 
+        bullets={true} 
         
       
     
