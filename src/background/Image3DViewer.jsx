@@ -1,31 +1,56 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
-const Image3DViewer = () => {
+const Image3DViewer = ({ onReady, onProgress, onError }) => {
   const containerRef = useRef();
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(getFOV(), window.innerWidth / window.innerHeight, 0.5, 2000);
-  camera.position.z = 2;
 
-  const renderer = new THREE.WebGLRenderer();
   function getFOV() {
     return window.innerWidth <= 768 ? 74 : 66;
   }
 
   useEffect(() => {
+    if (!containerRef.current) {
+      return undefined;
+    }
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(getFOV(), window.innerWidth / window.innerHeight, 0.5, 2000);
+    camera.position.z = 5;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     containerRef.current.appendChild(renderer.domElement);
 
-    const texture = new THREE.TextureLoader().load('/azulblanco.jpg');
-    const material = new THREE.MeshBasicMaterial({ map: texture });
-    const geometry = new THREE.PlaneGeometry(14, 8, 15, 9);
+    const loadingManager = new THREE.LoadingManager();
+    loadingManager.onProgress = (_url, loaded, total) => {
+      if (typeof onProgress === 'function' && total > 0) {
+        onProgress(Math.round((loaded / total) * 100));
+      }
+    };
+    loadingManager.onLoad = () => {
+      if (typeof onProgress === 'function') {
+        onProgress(100);
+      }
+      if (typeof onReady === 'function') {
+        onReady();
+      }
+    };
+    loadingManager.onError = () => {
+      if (typeof onError === 'function') {
+        onError();
+      }
+    };
 
+    const textureLoader = new THREE.TextureLoader(loadingManager);
+    const texture = textureLoader.load('/azulblanco.jpg');
+    const geometry = new THREE.PlaneGeometry(14, 8, 15, 9);
+    const material = new THREE.MeshBasicMaterial({ map: texture });
     const imageMesh = new THREE.Mesh(geometry, material);
     scene.add(imageMesh);
 
-    camera.position.z = 5;
-
     const clock = new THREE.Clock();
+    let animationFrameId;
 
     const animate = () => {
       const time = clock.getElapsedTime();
@@ -41,25 +66,17 @@ const Image3DViewer = () => {
       geometry.computeVertexNormals();
       geometry.attributes.position.needsUpdate = true;
 
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
 
       renderer.render(scene, camera);
     };
 
     animate();
 
-    
-    return () => {
-      scene.remove(imageMesh);
-      renderer.dispose();
-    };
-  }, []);
-
-  
-  useEffect(() => {
     const handleResize = () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
+      camera.fov = getFOV();
       camera.updateProjectionMatrix();
     };
 
@@ -67,8 +84,18 @@ const Image3DViewer = () => {
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      cancelAnimationFrame(animationFrameId);
+      scene.remove(imageMesh);
+      geometry.dispose();
+      material.dispose();
+      texture.dispose();
+      renderer.dispose();
+
+      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
+        containerRef.current.removeChild(renderer.domElement);
+      }
     };
-  }, []);
+  }, [onError, onProgress, onReady]);
 
   return <div ref={containerRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -999 }} />;
 };

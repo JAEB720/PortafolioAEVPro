@@ -61,17 +61,17 @@ const ContainerCenter = () => {
 
       <Card centered   style={{ position: 'relative', background: 'white', border: "solid Skyblue 1px",
          color: "#ADCCEA", borderRadius: "25px", boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.9)",   overflow: 'hidden'  }}>
-      <Image  src='SORAK-.png' wrapped ui={false} style={{ borderRadius: "25px",  }} />
+      <Image  src='AE.png' size='small' wrapped ui={false} style={{ borderRadius: "25px",  }} />
       <Image  
         src='/gif/Fox1.gif' 
         alt="icon" 
         style={{ 
           background: "transparent",
           position: 'absolute', 
-          bottom: '-50px', 
+          bottom: '-55px', 
           right: '-70px', 
-          width: '80%', 
-          height: '60%', 
+          width: '90%', 
+          height: '80%', 
         
        
         }} 
@@ -101,13 +101,12 @@ const ContainerCenter = () => {
           Acerca de mí
         </h2>
         <h4 style={{ fontSize: '1.20rem', lineHeight: '1.6', color: '#333', fontFamily: 'monaco,Consolas,Lucida Console,monospace', lineHeight: '1.6', }}>
-          Soy una persona autodidacta, bastante versátil, responsable, me encanta resolver problemas,
-          me gusta mejorar las cosas para facilitar mi trabajo, me gusta trabajar en equipo pero también
-          sé tomar el mando cuando es necesario. 
-          Tengo experiencia en diferentes áreas, mantenimiento de equipos de oficina,
-          instalación de redes, desarrollo web y desarrollo de software. 
-
-          Sigo adquiriendo conocimientos, perfeccionando mis habilidades para ser un mejor desarrollador y profesional.
+          "Desarrollador de software autodidacta,
+           apasionado por transformar problemas complejos en soluciones de código.
+            Mi curiosidad técnica me lleva a aprender constantemente y a no conformarme,
+             busco activamente formas de mejorar y crear herramientas que realmente aporten valor.
+              Disfruto trabajar en equipo, compartir conocimientos.
+               Busco una oportunidad donde pueda seguir creciendo como profesional."
         </h4>
       </div>
 
